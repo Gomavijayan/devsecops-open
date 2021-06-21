@@ -26,7 +26,8 @@ jobs:
             cat scan.txt
           no_output_timeout: 60m
       - run:
-          name: check-xss-dom
+          name: check-xss
+          shell: /bin/bash
           command: |  
             cat scan.txt
             val=$(cat scan.txt | grep "WARN-NEW: Cross Site Scripting")
