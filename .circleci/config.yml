@@ -2,7 +2,7 @@ version: 2.1
 executors:
   env-publisher:
     environment:
-      IMAGE_NAME: vishnusk/lab-devsecops
+      IMAGE_NAME: <docker-username>/lab-devsecops
 jobs:
   zap-test:
     executor: env-publisher
